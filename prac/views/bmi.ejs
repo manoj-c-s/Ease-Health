@@ -1,0 +1,36 @@
+<%- include('./partials/nav') %>
+<div class="container">
+    <div class="box">
+        	<div id="MAIN" style="    text-align: center;
+            font-size: 2rem;">
+			<h1 id="heading" >BMI-CALCULATOR</h1>
+		</div>
+
+		<form action="/users/bmicalculator" method="post" style="    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;">
+			<input type="text"
+				name="Name"
+				placeholder="Enter your name!" style="    width: 350px;
+                height: 35px;
+                border-radius: 11px;"/>
+			<br />
+			<input id="Height"
+				name="Height"
+				placeholder="Enter your height(m)" style="    width: 350px;
+                height: 35px;
+                border-radius: 11px;" />
+			<br />
+			<input id="Weight"
+				name="Weight"
+				placeholder="Enter your weight(kg)" style="    width: 350px;
+                height: 35px;
+                border-radius: 11px;" />
+			<br />
+			<button class="btn"
+					type="submit">Get-BMI</button>
+		</form>
+    </div>
+</div>
+	

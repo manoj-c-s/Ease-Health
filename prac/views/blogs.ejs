@@ -1,0 +1,24 @@
+<%- include('./partials/nav') %> <% for(i=items.length-1;i>=0;i--) {%>
+<div
+  class="container"
+  style="background-color: rgb(255, 255, 255); color: white; margin: 0px"
+>
+  <div class="box" style="background-color: rgb(51, 2, 2); margin: 5px">
+    <img
+      class="img"
+      style="height: 400px"
+      src="../images/<%=items[i].img%>"
+      alt="no image"
+    />
+    <div class="heading" style="font-size: 40px"><%= items[i].head %></div>
+
+    <div class="text" style="margin-top: 8px">
+      <%= items[i].content %>
+      <div class="date" style="margin-top: 90px">
+        <h4>Posted By: <%= items[i].Bby %></h4>
+        posted on : <%= items[i].date %>
+      </div>
+    </div>
+  </div>
+</div>
+<% } %>

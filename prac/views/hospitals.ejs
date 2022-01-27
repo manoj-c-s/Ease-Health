@@ -1,0 +1,40 @@
+<%- include('./partials/nav') %>
+<h1 style="color: bisque">
+  👉copy email address of hospital which you need to book appointment
+</h1>
+<div class="container">
+  <h1>
+    <a
+      href="/users/index"
+      style="
+        color: #ffeaea;
+        background: #ff2f2f;
+        padding: 7px;
+        border-radius: 10px;
+      "
+      >Book Appointment</a
+    >
+  </h1>
+</div>
+<div class="contaner">
+  <div class="box" style="width: unset">
+    <table style="font-size: 2rem">
+      <tr>
+        <th>Hospital name</th>
+        <th>Hospital email</th>
+        <th>Hospital timing</th>
+        <th>Contact no</th>
+        <hr />
+      </tr>
+      <% for(var i=0; i<=items.length-1; i++) {%>
+      <tr>
+        <td><%= items[i].Hname %></td>
+        <td><%= items[i].Hemail %></td>
+        <td><%= items[i].time %></td>
+        <td><%= items[i].contactNo %></td>
+        <hr />
+      </tr>
+      <% } %>
+    </table>
+  </div>
+</div>

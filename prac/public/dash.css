@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Slabo 27px", cursive;
+  background: #2c2c2c;
+}
+
+nav .logo {
+  color: white;
+  font-size: 20px;
+
+  padding-left: 11px;
+}
+nav {
+  height: 70px;
+  /* background: green; */
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+  position: sticky;
+}
+ul {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  top: 80px;
+  left: -100%px;
+  text-align: center;
+  transition: all 0.5s;
+}
+nav ul li {
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+nav ul li a {
+  color: white;
+
+  font-size: 20px;
+  /* background: green; */
+  background: rgba(36, 36, 36, 0.884);
+}
+.checkbtn {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: block;
+}
+#check {
+  display: none;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background: none;
+  color: black;
+}
+#check:checked ~ ul {
+  left: 0;
+  display: none;
+}
+
+.container {
+  width: 100%;
+  background: #525151;
+}
+.box {
+  max-width: 350px;
+  padding: 10px;
+  /* border: 2px solid red; */
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.712);
+
+  /* color:white; */
+}
+.box img {
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  width: 321px;
+  border-radius: 12px;
+}
+.box .img {
+  max-width: 570px;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  width: 321px;
+  border-radius: 12px;
+  /* opacity: 0.84; */
+}
+.box .img1 {
+  max-width: 500px;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  width: 321px;
+  border-radius: 12px;
+  /* opacity: 0.84; */
+}
+.box .heading,
+.box .text {
+  width: 100%;
+  padding: 0 5px;
+  min-width: 300px;
+}
+.box .heading1,
+.box .text1 {
+  width: 100%;
+  padding: 0 5px;
+  min-width: 300px;
+}
+h5.h6 {
+  text-transform: uppercase;
+  font-family: "Slabo 27px", cursive;
+}
+p {
+  font-family: "Slabo 27px", cursive;
+  margin: 10px 0;
+}
+a {
+  /* background-color: green; */
+  background: #5f5e5e;
+  color: seashell;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+.box a:hover {
+  background-color: rgb(12, 6, 6);
+}
+.dashb a:hover {
+  background-color: rgb(12, 6, 6);
+}
+.dashb {
+  max-width: 350px;
+  padding: 10px;
+  /* border: 2px solid red; */
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.712);
+
+  /* color:white; */
+}
+.dashb img {
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  width: 321px;
+  border-radius: 12px;
+}
+.dashb .img {
+  max-width: 570px;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  width: 321px;
+  border-radius: 12px;
+  /* opacity: 0.84; */
+  margin: auto;
+}
+.dashb .img1 {
+  margin: auto;
+  max-width: 500px;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  width: 321px;
+  border-radius: 12px;
+  /* opacity: 0.84; */
+}
+.dashb .heading,
+.dashb .text {
+  width: 100%;
+  padding: 0 5px;
+  min-width: 300px;
+  text-align: center;
+}
+.dashb .heading1,
+.dashb .text1 {
+  width: 100%;
+  padding: 0 5px;
+  min-width: 300px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  nav .logo {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 11px;
+  }
+  nav {
+    height: 70px;
+    /* background: green; */
+    background: rgba(36, 36, 36, 0.884);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+    position: sticky;
+  }
+  nav ul {
+    left: unset;
+    margin-right: 30px;
+    position: unset;
+
+    height: unset;
+    width: unset;
+    float: right;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+    line-height: 0;
+  }
+  nav ul li a {
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 25px;
+    /* background: green; */
+    background: rgba(36, 36, 36, 0.884);
+    transition: 0.5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #fd1313;
+  }
+  nav ul ul li a:hover,
+  nav ul ul li a.active {
+    color: rgb(245, 35, 35);
+    background-color: black;
+  }
+  nav ul ul {
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid black;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s linear;
+  }
+  nav ul ul li {
+    width: 171px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #2c2626;
+    border-top: none;
+    background-color: rgba(36, 36, 36, 0.884);
+    color: white;
+  }
+  nav ul ul li a {
+    line-height: 50px;
+    font-size: 18px;
+    width: 142px;
+  }
+  nav ul ul ul {
+    border-top: none;
+  }
+  nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i {
+    margin-left: 45px;
+  }
+  .checkbtn {
+    display: none;
+  }
+  #check:checked ~ ul {
+    display: unset;
+  }
+  .pro {
+    margin-right: 19px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .box {
+    max-width: 100%;
+    width: 100%;
+    margin: 18px 30px 9px 30px;
+    border-radius: 12px;
+  }
+  .box img {
+    height: 100%;
+    width: 100%;
+  }
+  .box .img1 {
+    float: right;
+    height: 500px;
+    width: 480px;
+    border-radius: 12px;
+  }
+  .box .img {
+    float: left;
+    height: 500px;
+    width: 480px;
+    border-radius: 12px;
+  }
+
+  .box .heading {
+    text-decoration: underline;
+    font-size: 5rem;
+    float: right;
+    width: 60%;
+    text-transform: uppercase;
+    font-family: "Slabo 27px", cursive;
+  }
+  .box .text {
+    font-family: "Slabo 27px", cursive;
+    font-size: 28px;
+    float: right;
+    width: 50%;
+    margin-right: 140px;
+  }
+  .box .heading1 {
+    text-decoration: underline;
+    font-size: 5rem;
+    float: left;
+    width: 60%;
+    text-transform: uppercase;
+    font-family: "Slabo 27px", cursive;
+    padding-left: 78px;
+  }
+  .box .text1 {
+    font-family: "Slabo 27px", cursive;
+    font-size: 28px;
+    float: left;
+    width: 50%;
+    margin-right: 140px;
+    padding-left: 78px;
+  }
+  .btn {
+    border-radius: 27px;
+    background-color: rgba(36, 36, 36, 0.884);
+    color: white;
+    width: 108px;
+    height: 32px;
+  }
+  .dashcont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .cont {
+    display: flex;
+  }
+  .dashb {
+    max-width: 480px;
+    width: 471px;
+  }
+  .dashb {
+    max-width: 480px;
+    width: 471px;
+  }
+
+  .dashc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    font-weight: bold;
+  }
+
+  .btn {
+    border-radius: 27px;
+    background-color: rgba(36, 36, 36, 0.884);
+    color: white;
+    width: 108px;
+    height: 32px;
+  }
+  .cont {
+    display: flex;
+    width: 100vw;
+  }
+  .dashb {
+    max-width: 480px;
+    width: 469px;
+    font-weight: 800;
+    height: 565px;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    padding: 4px;
+    font-size: 2rem;
+  }
+  table {
+    margin: auto;
+  }
+}

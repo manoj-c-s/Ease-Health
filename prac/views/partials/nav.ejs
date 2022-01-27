@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dbms project</title>
+    <link rel="stylesheet" href="/dash.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn"> <i class="fas fa-bars"></i> </label>
+      <ul
+        style="
+          margin-left: 0;
+          float: left;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          src="../logo.jpg"
+          style="
+            width: 88px;
+
+            opacity: 0.9;
+            z-index: -1;
+          "
+          alt=""
+        />
+        <li>
+          <a href="dashboard" style="background-color: unset; color: white"
+            >EaseHealth</a
+          >
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="/users/blogs">blogs</a>
+        </li>
+
+        <li>
+          <a href="/users/searchHos">search hospital</a>
+        </li>
+        <li>
+          <a href="/users/bmicalculator">bmi-calculator</a>
+        </li>
+        <li>
+          <a href="/users/diet">Diet</a>
+        </li>
+        <li>
+          <a href="#"
+            >Diseases
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <ul>
+            <li><a href="/users/heart">Heart Diseases</a></li>
+            <li><a href="/users/t2d">Diabetes 2</a></li>
+            <li><a href="/users/cancer">Cancer</a></li>
+            <li><a href="/users/arthritis">Arthritis</a></li>
+            <li><a href="/users/obesity">Obesity</a></li>
+            <li><a href="/users/weightgain">Weight gain</a></li>
+          </ul>
+        </li>
+
+        <li class="pro">
+          <a href="#"
+            >Profile
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <ul>
+            <li><a href="#"><%= iname %> </a></li>
+            <li><a href="/users/forgot">change password</a></li>
+            <li><a href="/users/logout">logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

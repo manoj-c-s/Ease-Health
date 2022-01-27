@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Node.js Send Email</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <a
+          href="/users/dashboard"
+          style="
+            color: #eb2d2d;
+
+            padding: 7px;
+            border-radius: 10px;
+          "
+          >Return back</a
+        >
+      </h1>
+
+      <form
+        action="/users/index"
+        role="form"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="email"
+            name="to"
+            required
+            placeholder="To:"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="subject"
+            placeholder="Subject:"
+            required
+            id=""
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            required
+            class="form-control"
+            name="body"
+            id=""
+            cols="30"
+            rows="10"
+          >
+This letter is in regard for an urgent appointment   (preferably by tomorrow/next week/any suitable time). I am having  (Mention the Symptoms).   (Mention any major concerns here in the paragraph)
+
+            I request you to hear my plea for an urgent appointment, so that I can be cured soon. I am leaving my contact details below; please give me the earliest appointment.</textarea
+          >
+        </div>
+        <label for="attachment">Attachment:</label>
+        <div class="form-group">
+          <input type="file" required class="form-control" name="image" id="" />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-block btn-danger">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
